@@ -1,0 +1,9 @@
+services:
+  yoursown:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: yoursown:v1.0.0
+    container_name: yoursown
+    ports:
+      - 8080:8080
